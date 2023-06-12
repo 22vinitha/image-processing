@@ -1,0 +1,21 @@
+
+# importing cv2 library
+import cv2
+ 
+# Reading the image
+image = cv2.imread("C:/Users/User/Desktop/350Wx350H-634485-0320.jpg")
+ 
+# Using cv2.putText()
+new_image = cv2.putText(
+  img = image,
+  text = "HOPE",
+  org = (100, 200),
+  fontFace = cv2.FONT_HERSHEY_DUPLEX,
+  fontScale = 2.0,
+  color = (255, 255, 255,),
+  thickness = 3
+)
+ 
+# Saving the new image
+cv2.imshow("output image",new_image)
+cv2.waitKey(0)
