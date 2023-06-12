@@ -1,0 +1,12 @@
+flipped_img =cv2.imread('D:/savedimage.jpg')
+cv2.imshow("Horizontal ", flipped_img)
+
+cv2.waitKey(0)
+# flip the image by horizontally
+img_h1 = cv2.flip(flipped_img, 1)
+
+# display the rotated image
+cv2.imshow("original", img_h1)
+cv2.imwrite('D:/original.jpg', img_h1)    
+cv2.waitKey(0)
+cv2.destroyAllWindows()
