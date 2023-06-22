@@ -1,0 +1,41 @@
+#using the imagefiltering
+from PIL import Image,ImageFilter
+image=Image.open('Mr-Bean.jpg')
+embossimage=image.filter(ImageFilter.EMBOSS)
+embossimage.show
+
+
+
+
+
+
+#importing image and imagefilter module from PIL package
+from PIL import Image,ImageFilter
+#creating a image object
+img1=Image.open('C:/Users/User/Desktop/marguerite-729510_1280.jpg')
+#applying the EDGE_ENCHANCE filter
+img2=img1.filter(ImageFilter.EDGE_ENHANCE)
+img2.show()
+
+
+
+#creating a image object
+img1=Image.open('C:/Users/User/Desktop/marguerite-729510_1280.jpg')
+#applying the contour filter
+img2=img1.filter(ImageFilter.CONTOUR)
+img2.show()
+
+
+
+#creating a image object
+img1=Image.open('C:/Users/User/Desktop/marguerite-729510_1280.jpg')
+#applying the SHARPEN
+img2=img1.filter(ImageFilter.SHARPEN)
+img2.show()
+
+
+#creating a image object
+img1=Image.open('C:/Users/User/Desktop/marguerite-729510_1280.jpg')
+#applying the EDGE_ENCHANCE filter
+edges_image=image.filter(ImageFilter.FIND_EDGES)
+edges_image.show()
