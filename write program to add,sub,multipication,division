@@ -1,0 +1,43 @@
+#add
+import cv2
+img1=cv2.imread('1-500x250-3.jpg')
+img2=cv2.imread('2-500x250-2.jpg')
+print(img1.shape)
+print(img2.shape)
+img3=img1+img2
+cv2.imshow('image',img3)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#subtract
+import cv2
+img1=cv2.imread('dot.jpg')
+img2=cv2.imread('star.jpg')
+print(img1.shape)
+print(img2.shape)
+img3=img2-img1
+cv2.imshow('image',img3)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#multplication
+import cv2
+img1=cv2.imread('1-500x250-3.jpg')
+img2=cv2.imread('2-500x250-2.jpg')
+print(img1.shape)
+print(img2.shape)
+img3=img1*img2
+cv2.imshow('image',img3)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#division 
+import cv2
+img1=cv2.imread('1-500x250-3.jpg')
+img2=cv2.imread('2-500x250-2.jpg')
+print(img1.shape)
+print(img2.shape)
+img3=img1/img2
+cv2.imshow('image',img3)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
